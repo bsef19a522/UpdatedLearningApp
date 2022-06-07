@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,5 +34,13 @@ public class MainActivity extends AppCompatActivity {
 
         Adaptor ad = new Adaptor(getApplicationContext(), Alphabet, img);
         lst.setAdapter(ad);
+
+        lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Toast.makeText(getApplicationContext(),"Nothing In It",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
