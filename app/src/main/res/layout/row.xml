@@ -14,6 +14,7 @@
         android:layout_width="141dp"
         android:layout_height="51dp"
         android:gravity="center"
-        android:text="Apple" />
+        android:text="Apple"
+        android:textSize="27sp" />
 
 </LinearLayout>
